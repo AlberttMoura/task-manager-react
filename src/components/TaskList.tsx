@@ -26,8 +26,6 @@ export function TaskList() {
         isComplete: false
       }
       setTasks([...tasks, newTask].sort((a, b) => a.id - b.id))
-      console.log(newTask.id)
-      console.log(tasks)
     }
   }
   function handleToggleTaskCompletion(id: number) {
